@@ -1,3 +1,4 @@
 font-family = FiraCode Nerd Font Mono
 theme = Kanagawa Dragon
 background-opacity = 0.85
+mouse-hide-while-typing = true
