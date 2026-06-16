@@ -4,6 +4,13 @@ return {
 		build = ":TSUpdate",
 		lazy = false,
 		init = function()
+			-- Blade filetype detection
+			vim.filetype.add({
+			    pattern = {
+				['.*%.blade%.php'] = 'blade',
+			    }
+			})
+
 			local parsers = {
 				"lua",
 				"vim",
@@ -11,12 +18,13 @@ return {
 				"query",
 				"javascript",
 				"typescript",
-				"tsx",
 				"html",
 				"css",
 				"json",
 				"gitignore",
-				"go",
+				"php",
+				"blade",
+				"vue",
 			}
 
 			local group = vim.api.nvim_create_augroup("ThePrimeagenTreesitter", { clear = true })
