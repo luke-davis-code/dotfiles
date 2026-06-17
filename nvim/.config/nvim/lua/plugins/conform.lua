@@ -12,6 +12,7 @@ return {
 				lua = { "stylua" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
+				php = { "prettier" },
 				vue = { "prettier" },
 			},
 			formatters = {
