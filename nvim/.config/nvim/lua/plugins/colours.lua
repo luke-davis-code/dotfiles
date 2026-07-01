@@ -6,13 +6,12 @@ function ColorMyPencils(color)
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
-
 return {
-    {
-      "rebelot/kanagawa.nvim",
-      name = "kanagawa",
-      config = function()
-	ColorMyPencils();
-      end
-    }
-  }
+	{
+		"rebelot/kanagawa.nvim",
+		name = "kanagawa",
+		config = function()
+			ColorMyPencils()
+		end,
+	},
+}
