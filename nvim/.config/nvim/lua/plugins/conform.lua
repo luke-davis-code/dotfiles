@@ -12,8 +12,9 @@ return {
 				lua = { "stylua" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
-				php = { "prettier" },
+				php = { "pint" },
 				vue = { "prettier" },
+				blade = { "blade-formatter" },
 			},
 			formatters = {
 				["clang-format"] = {
